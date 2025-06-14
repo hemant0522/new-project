@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* navbar start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-color: white;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: auto;
+    z-index: 10;
+}
+
+
+.logo {
+    font-size: 5vh;
+    font-weight: bold;
+    color: #ff1654;
+    /* margin-left: 15vh; */
+
+
+}
+
+.nav-link {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    /* margin-right: 50px; */
+}
+
+.li-color a {
+    color: black;
+}
+
+.li-color a:hover {
+    color: #ff1654;
+}
+
+.a-color {
+    color: #ff1654;
+}
+
+.nav-link li a {
+    text-decoration: none;
+
+    font-size: 20px;
+
+}
+
+.menu-bar {
+    display: none;
+    color: black;
+
+}
+
+.sign {
+    text-decoration: none;
+    color: white;
+    background-color: #ff1654;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 5vhpx;
+}
+
+/* Navbar End */
+/* hero start */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.form {
+    position: absolute;
+    display:flex;
+    margin-top: 500px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.select-date-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.date-submit {
+    text-decoration: none;
+    color: white;
+    background-color: #ff1654;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    padding: 10px 20px;
+   text-align: center;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(travel.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 100px;
+    text-shadow: 2px 2px #0a0808;
+    text-transform:uppercase;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* hero end */
+
+/* text are start */
+.container {
+    color: rgb(79, 183, 63);
+    border: 2px solid rgb(194, 21, 21);
+    width: 100%;
+    font-size: 26px;
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+}
+
+/* text area end */
+/* image part start */
+.img-part {
+
+    display: flex;
+}
+
+.first,
+.second {
+    width: 100%;
+
+}
+
+.img1,
+.img2 {
+    width: 100%;
+}
+/* image part end  */
+
+@media (max-width:900px) {
+    .img-part {
+        flex-direction: column-reverse;
+    }
+
+    .menu-bar {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .hero-text {
+        font-size: 10px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    .form{
+        margin-top: 300px;
+        flex-direction: column;
+    }
+    .img-part {
+        flex-direction: column-reverse;
+    }
+
+    .menu-bar {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .sign {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero-text {
+        font-size: 7px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+}
+
+
+
+
+
+
+
+/* dropbtn start */
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 0px
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* dropbtn end */
